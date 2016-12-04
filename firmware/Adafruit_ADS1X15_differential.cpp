@@ -26,7 +26,7 @@
 
 #include <Wire.h>
 
-#include "Adafruit_ADS1X15.h"
+#include "Adafruit_ADS1X15_differential.h"
 
 /**************************************************************************/
 /*!
