@@ -20,9 +20,9 @@
 
 #if ARDUINO >= 100
  #include "Arduino.h"
-#else
+/*#else
  #include "WProgram.h"
-#endif
+#endif*/
 
 #include <Wire.h>
 
