@@ -1,5 +1,5 @@
 #include "application.h"
-#include <Adafruit_ADS1X15_differentialAdafruit_ADS1X15_differential.h>
+#include <Adafruit_ADS1X15_differential/Adafruit_ADS1X15_differential.h>
 
 // Adafruit_ADS1115 ads;  /* Use this for the 16-bit version */
 Adafruit_ADS1015 ads;     /* Use thi for the 12-bit version */
@@ -47,3 +47,4 @@ void loop(void)
 
   results2_3 = ads.readADC_Differential_2_3();
   Serial.print("Differential 2-3: "); Serial.print(results2_3); Serial.print("("); Serial.print(results2_3 * multiplier); Serial.println("mV)");
+}
