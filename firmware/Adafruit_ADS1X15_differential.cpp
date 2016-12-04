@@ -24,7 +24,7 @@
  #include "WProgram.h"
 #endif*/
 
-#include <Wire.h>
+//#include <Wire.h>
 
 #include "Adafruit_ADS1X15_differential.h"
 
