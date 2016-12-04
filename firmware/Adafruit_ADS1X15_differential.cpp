@@ -19,7 +19,7 @@
 */
 /**************************************************************************/
 //#if ARDUINO >= 100
- #include "application.h"
+// #include "application.h"
 /*#else
  #include "WProgram.h"
 #endif*/
@@ -34,11 +34,12 @@
 */
 /**************************************************************************/
 static uint8_t i2cread(void) {
-  #if ARDUINO >= 100
+ /* #if ARDUINO >= 100
   return Wire.read();
   #else
   return Wire.receive();
-  #endif
+  #endif */
+  return Wire.read();
 }
 
 /**************************************************************************/
@@ -47,11 +48,14 @@ static uint8_t i2cread(void) {
 */
 /**************************************************************************/
 static void i2cwrite(uint8_t x) {
-  #if ARDUINO >= 100
+  /*#if ARDUINO >= 100
   Wire.write((uint8_t)x);
   #else
   Wire.send(x);
-  #endif
+  #endif*/
+
+  Wire.write((uint8_t)x);
+
 }
 
 /**************************************************************************/
