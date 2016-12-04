@@ -2,6 +2,6 @@
   "name": "Adafruit_ADS1X15_differential",
   "author": "ycheneval",
   "license": "na",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "Driver for TI's ADS1015: 12-bit Differential or Single-Ended ADC with PGA and Comparator"
 }
